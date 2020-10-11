@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 20px/1.5 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('./images/background.jpeg');
+}
+
+.main {
+    
+    list-style-type: none;
+    width: 50%;
+    padding: 0;
+    border-radius: 10px;
+  }
+.row {
+                     
+    display: flex;             
+    justify-content: center;
+    padding: .5em;
+  }
+
+.row > label {
+    padding: .5em 0.5em .5em 0;
+    flex: 1;
+  }
+
+.row > input {
+        flex: 2;
+  }
+
+.row > p {
+    color: brown;
+}
+
+.row > input,
+  .row > button {
+    padding: .5em;
+  }
+
+ .row .about {
+     width: 65%;
+ }
+  .row > button {
+   cursor: pointer;
+   background: white;
+   color: black;
+   font-size: medium;
+   width: 20%;
+  }
+
+  span {
+      color: brown;
+  }
+
+@media only screen and (max-width: 480px) {
+    table {
+        width:95%;
+    }
+    input[type=text], textarea {
+        width:75%;
+    }
+}

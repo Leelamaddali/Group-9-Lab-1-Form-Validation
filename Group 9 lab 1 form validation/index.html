@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form validation</title>
+</head>
+
+<body>
+    <h1> Form Registration</h1>
+
+    <form  name='registration'  onSubmit="return formValidation();" >
+
+        <ul class="main">
+            <li class="row">
+                <label>First Name</label>
+                <input type="text" name="fname" id="fname" size="10" />
+                <span id="firstname"  ></span>
+            </li>
+            <li class="row">
+                <label>Last Name</label>
+                <input type="text" name="lname" id="lname" size="10" />
+                <span id="lastname"></span>
+            </li>
+            <li class="row">
+                <label>User Id</label>
+                <input type="text" name="userid" id="uid" size="12" />
+                <span id="userid"></span>
+
+            </li>
+            <li class="row">
+                <label>Gender</label>
+                <input name="gender" type="radio" value="m" /> Male
+                <input name="gender" type="radio" value="f" /> Female
+
+            </li>
+            <li class="row">
+                <label>Email</label>
+                <input type="email" name="email" id="emailid" size="20" />
+                <span id="emails"></span>
+            </li>
+
+            <li class="row">
+                <label>Phone number</label>
+                <input type="number" name="phonenumber" id="pnumber" size="10" />
+                <span id="phnumber"></span>
+
+            </li>
+            <li class="row">
+                <label>Password</label>
+                <input type="password" name="pass" id="pass" size="12" />
+                <span id="passwords"></span>
+
+            </li>
+            <li class="row">
+                <label>Confirm Password</label>
+                <input type="password" name="repassid" id="cpass" size="12" />
+                <span id="cpassword"></span>
+
+            </li>
+            
+            <li class="row">
+                <button type="submit" onclick="return SubmitAlert();">Submit</button>
+
+            </li>
+
+
+        </ul>
+
+
+
+
+    </form>
+<!-- script file -->
+<script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>
