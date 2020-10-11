@@ -8,7 +8,7 @@ const formValidation = () => {
     let phone_number = document.getElementById('pnumber').value;
     let user_pass = document.getElementById('pass').value;
     let confirm_pass = document.getElementById('cpass').value;
-    let complete_form = document.getElementsByName('registration')[0];
+    
     
 
     // first name and last name validation
@@ -73,11 +73,10 @@ const formValidation = () => {
     }
 
     
-    complete_form.reset();
+    
 
 
 }
 
-const SubmitAlert = () => {
-    alert("Registration Successful");
-}
+
+
